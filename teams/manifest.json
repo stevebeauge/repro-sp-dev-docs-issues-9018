@@ -1,0 +1,98 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "packageName": "InTeams",
+  "id": "3249eed9-2f35-4ba0-a3f0-57cac9caccf7",
+  "version": "1.0.0.0",
+  "developer": {
+    "name": "SPFx + Teams Dev",
+    "websiteUrl": "https://products.office.com/en-us/sharepoint/collaboration",
+    "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement"
+  },
+  "name": {
+    "short": "InTeams",
+    "full": "InTeams"
+  },
+  "description": {
+    "short": "InTeams",
+    "full": "InTeams"
+  },
+  "icons": {
+    "outline": "3249eed9-2f35-4ba0-a3f0-57cac9caccf7_outline.png",
+    "color": "3249eed9-2f35-4ba0-a3f0-57cac9caccf7_color.png"
+  },
+  "accentColor": "#004578",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=3249eed9-2f35-4ba0-a3f0-57cac9caccf7%26forceLocale={locale}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "3249eed9-2f35-4ba0-a3f0-57cac9caccf7",
+      "name": "InTeams",
+      "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=3249eed9-2f35-4ba0-a3f0-57cac9caccf7%26forceLocale={locale}",
+      "websiteUrl": "https://products.office.com/en-us/sharepoint/collaboration",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "validDomains": [
+    "*.login.microsoftonline.com",
+    "*.sharepoint.com",
+    "*.sharepoint-df.com",
+    "spoppe-a.akamaihd.net",
+    "spoprod-a.akamaihd.net",
+    "resourceseng.blob.core.windows.net",
+    "msft.spoppe.com"
+  ],
+  "webApplicationInfo": {
+    "resource": "https://{teamSiteDomain}",
+    "id": "00000003-0000-0ff1-ce00-000000000000"
+  },
+  "bots": [
+    {
+      "botId": "101cc4c6-67de-46c6-9283-cceb4afccec6",
+      "scopes": [
+        "team",
+        "groupChat",
+        "personal"
+      ],
+      "isNotificationOnly": true,
+      "supportsCalling": false,
+      "supportsVideo": false,
+      "supportsFiles": true
+    }
+  ],
+  "composeExtensions": [
+    {
+      "botId": "101cc4c6-67de-46c6-9283-cceb4afccec6",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "id": "uploadFileSP",
+          "type": "action",
+          "title": "Test compose extension",
+          "description": "",
+          "initialRun": false,
+          "fetchTask": false,
+          "context": [
+            "message"
+          ],
+          "taskInfo": {
+            "title": "Test compose extension",
+            "height": "large",
+            "width": "large",
+            "url": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamstaskhostedapp.aspx%3Fteams%26personal%26componentId=3249eed9-2f35-4ba0-a3f0-57cac9caccf7%26forceLocale={locale}"
+          }
+        }
+      ]
+    }
+  ]
+}

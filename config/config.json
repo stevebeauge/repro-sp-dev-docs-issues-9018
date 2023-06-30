@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "in-teams-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/inTeams/InTeamsWebPart.js",
+          "manifest": "./src/webparts/inTeams/InTeamsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "InTeamsWebPartStrings": "lib/webparts/inTeams/loc/{locale}.js"
+  }
+}

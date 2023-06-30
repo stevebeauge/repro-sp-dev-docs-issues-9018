@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "helloworldteams-client-side-solution",
+    "id": "d9e0053c-27a7-49ed-ac1d-4dd476922a02",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.17.3"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "helloworldteams description"
+      },
+      "longDescription": {
+        "default": "helloworldteams description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "helloworldteams Feature",
+        "description": "The feature that activates elements of the helloworldteams solution.",
+        "id": "9b297230-9717-4f79-8c23-dcc5fa3ef05d",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/helloworldteams.sppkg"
+  }
+}
