@@ -37,26 +37,7 @@
       "supportsFiles": true
     }
   ],
-  "configurableTabs": [
-    {
-      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=3249eed9-2f35-4ba0-a3f0-57cac9caccf7%26forceLocale={locale}",
-      "canUpdateConfiguration": true,
-      "scopes": [
-        "team"
-      ]
-    }
-  ],
-  "staticTabs": [
-    {
-      "entityId": "3249eed9-2f35-4ba0-a3f0-57cac9caccf7",
-      "name": "InTeams",
-      "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=3249eed9-2f35-4ba0-a3f0-57cac9caccf7%26forceLocale={locale}",
-      "websiteUrl": "https://products.office.com/en-us/sharepoint/collaboration",
-      "scopes": [
-        "personal"
-      ]
-    }
-  ],
+
   "composeExtensions": [
     {
       "botId": "101cc4c6-67de-46c6-9283-cceb4afccec6",
